@@ -1,73 +1,234 @@
-# React + TypeScript + Vite
+# Fanme
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fanme é uma plataforma de roleplay interativo em formato de fanfic, onde o usuário entra na história como protagonista e interage em tempo real com personagens gerados por IA.
 
-Currently, two official plugins are available:
+A proposta do produto é transformar fanfics em experiências interativas, imersivas e personalizadas no formato de chat.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O Fanme nasce com a proposta de unir:
 
-## Expanding the ESLint configuration
+* fanfic
+* roleplay
+* inteligência artificial
+* narrativa interativa
+* fandom culture
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ao invés de apenas consumir uma história, o usuário participa dela.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Cada escolha altera o rumo da narrativa.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Objetivo
+
+Construir uma plataforma focada em:
+
+* experiências interativas de fanfic
+* fandoms populares
+* histórias personalizadas
+* narrativa em português
+* sistema de progressão e histórico
+
+---
+
+## Tecnologias
+
+### Base atual
+
+* React
+* TypeScript
+* Vite
+
+### Stack planejada
+
+* React Router DOM
+* Zustand
+* TanStack Query
+* TailwindCSS
+* Framer Motion
+* vite-plugin-pwa
+
+---
+
+## Arquitetura planejada
+
+```txt
+src
+├── components
+├── features
+│   ├── auth
+│   ├── stories
+│   ├── profile
+│   ├── library
+│   └── premium
+├── pages
+├── routes
+├── hooks
+├── services
+├── store
+├── types
+├── utils
+└── assets
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Funcionalidades planejadas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* autenticação de usuários
+* feed de fandoms
+* exploração de histórias
+* sistema de personagens
+* roleplay em tempo real
+* histórico de sessões
+* biblioteca pessoal
+* perfil de usuário
+* assinatura premium
+
+---
+
+## Fluxo do produto
+
+```txt
+Onboarding
+↓
+Cadastro/Login
+↓
+Home
+↓
+Explorar fandoms
+↓
+Escolher história
+↓
+Criar personagem
+↓
+Iniciar roleplay
+↓
+Interagir com IA
+↓
+Salvar progresso
 ```
+
+---
+
+## Como executar
+
+Clone o repositório:
+
+```bash
+git clone <repo-url>
+```
+
+Entre na pasta:
+
+```bash
+cd fanme
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute localmente:
+
+```bash
+npm run dev
+```
+
+Gerar build:
+
+```bash
+npm run build
+```
+
+Preview da build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Convenção de commits
+
+Padrão adotado:
+
+```txt
+feat: nova funcionalidade
+fix: correção
+refactor: refatoração
+style: ajustes visuais
+docs: documentação
+chore: manutenção
+```
+
+Exemplo:
+
+```bash
+git commit -m "feat: add authentication flow"
+```
+
+---
+
+## Status do projeto
+
+Projeto em fase inicial de setup.
+
+Atualmente contém:
+
+* configuração base do React
+* TypeScript
+* Vite
+
+Próximas etapas:
+
+* configurar roteamento
+* configurar estado global
+* configurar PWA
+* estruturar arquitetura
+* iniciar desenvolvimento das telas
+
+---
+
+## Roadmap
+
+### Fase 1
+
+Estruturação da base
+
+### Fase 2
+
+Sistema de autenticação
+
+### Fase 3
+
+Sistema de histórias
+
+### Fase 4
+
+Integração com IA
+
+### Fase 5
+
+Chat interativo
+
+### Fase 6
+
+Sistema premium
+
+### Fase 7
+
+Deploy e lançamento
+
+---
+
+## Licença
+
+Proprietary.
+
+Todos os direitos reservados.
